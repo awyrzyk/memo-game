@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Memo game</title>
+	<meta name="description" content="The great exercise for your brain." />
+	<meta name="keywords" content="memo, memory, brain, mind, exercise" />
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet"> 
+	<link rel="stylesheet" href="memo.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	
+  </head>
+  <body>
+	<h1> the great memo game </h1>
+	<div id="container">
+		<div id="rules">
+			<p id="description"> This game will help you to keep your brain sharp. </p>
+			<p id="gamerules">Game rules</p>
+			<ol> 
+				<li>Clicking "New game" button, you will start the countdown timer. You will see the board with 12 numbers to remember in 15 seconds.  </li>
+				<li>Once the time is over, you will be asked about the position of one of the numbers. </li>
+				<li>There is only one tile with the correct answer.</li>
+				<li>One wrong answer means game over.</li>
+			</ol>
+			<p id="luck"> Good luck! </p>
+			<i class="far fa-clock"></i>
+			<div id="timer"><span id="time-left"></span><span id="secs-left"></span><span id="timeUnit"></span></div>
+		</div>
+			
+		<div id="game">
+			<div id="menu">
+				<span id="buttons">
+				<button id="start" class="button">New game</button>
+				<button id="reset" class="button" >Reset</button>
+				</span>
+				<span  id="question"></span>
+				<span id="update">
+				<span id="turnCounter"></span>
+				<span id="score"></span>
+				</span>
+			</div>
+			<div id="board"> 
+				<div class="card">?</div>
+				<div class="card">?</div>
+				<div class="card">?</div>
+				<div class="card">?</div>
+				<div class="card">?</div>
+				<div class="card">?</div>
+				<div class="card">?</div>
+				<div class="card">?</div>
+				<div class="card">?</div>
+				<div class="card">?</div>
+				<div class="card">?</div>
+				<div class="card">?</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="memo.js"> </script>
+  </body>
+</html>
