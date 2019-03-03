@@ -65,7 +65,7 @@ function countdown(){
 
 function checkNumber(x){
 	if (numbers[x]==number){
-		var audio = new Audio('audio.wav');
+		var audio = new Audio('right.wav');
         audio.play(); 
 		score++;
 		scores.innerHTML="| Score: "+score;
